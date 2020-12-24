@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Vendor Statement SuiteApp Test Report</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Vendor Statement SuiteApp Test Report</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Nov 9, 2020 07:53:34 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Features</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> feature(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Scenarios</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> scenario(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>15</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Features</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Automation Testing on Vendor Statement Suite App</span>
+						<span class='test-time'>Nov 9, 2020 07:53:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 2m 5s+803ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Test scenario for Statement date & Start date field validations</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">login</span>
+				<div class='pre'>Login Successful in Netsuite</div>
+			
+		</li>
+		<li test-id='4' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">user_is_in_Vendor_Statement_page</span>
+				<div class='pre'>Navigated to Vendor Statement page</div>
+			
+		</li>
+		<li test-id='5' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verify_all_the_field_validationss</span>
+				<div class='pre'>Alert occured for verification of Statement Date Field with alphabets: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Statement Date Field with numbers: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Statement Date Field with special characters: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Statement Date Field with alpha-numerics: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Statement Date Field with alphabets & special characters: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Statement Date Field with numbers & special characters: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Value of the month adjusted to 12</div>
+				<div class='pre'>Value of the date adjusted to 31</div>
+				<div class='pre'>Statement date is taken as current date</div>
+				<div class='pre'>Alert occured for verification of Start Date Field with alphabets: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Start Date Field with numbers: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Start Date Field with special characters: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Start Date Field with alpha-numerics: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Start Date Field with alphabets & special characters: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Alert occured for verification of Start Date Field with numbers & special characters: Invalid date value (must be M/D/YYYY)</div>
+				<div class='pre'>Value of the month adjusted to 12</div>
+				<div class='pre'>Value of the date adjusted to 31</div>
+				<div class='pre'>Start date is taken as current date</div>
+			
+		</li>
+		<li test-id='6' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verify_Start_date_exceed_Statement_Date_error</span>
+				<div class='pre'>Alert occured for invalid date range: Start Date can not be greater than Statement Date. Please enter the dates again and try again.</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Automation Testing on Vendor Statement Suite App</span>
+						<span class='test-time'>Nov 9, 2020 07:55:41 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='8' status='fail'>
+	<span class='duration right label'>0h 2m 16s+571ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Test scenario for Vendor List verifications</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='9' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">login</span>
+				<div class='pre'>Login Successful in Netsuite</div>
+			
+		</li>
+		<li test-id='10' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">user_is_in_Vendor_Statement_page</span>
+				<div class='pre'>Navigated to Vendor Statement page</div>
+			
+		</li>
+		<li test-id='11' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verify_the_vendors_in_the_vendor_sublist_based_on_vendor_category</span>
+				<div class='pre'>Vendors are displayed correctly in the Vendors sublist based on the Vendor category = Supplies</div>
+				<div class='pre'>Vendors are not displayed correctly in the Vendors sublist based on the Vendor category = Wholesaler</div>
+			
+		</li>
+		<li test-id='12' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verify_Mark_All_functionality_with_Print_Email_functionality</span>
+				<div class='pre'>Vendor statement print successfull</div>
+				<div class='pre'>Alert occured: 
+Email cannot be sent to the Vendor: Safeway.
+Code: SSS_MISSING_REQD_ARGUMENT
+Details: author</div>
+			
+		</li>
+		<li test-id='13' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verify_Unmark_All_functionality_with_Print_Email_functionality</span>
+				<div class='pre'>Alert occured: Please select atleast one Vendor</div>
+				<div class='pre'>Alert occured: Please select atleast one Vendor</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Automation Testing on Vendor Statement Suite App</span>
+						<span class='test-time'>Nov 9, 2020 07:58:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='15' status='pass'>
+	<span class='duration right label'>0h 2m 43s+320ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Test scenario for verifying the Print functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='16' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">login</span>
+				<div class='pre'>Login Successful in Netsuite</div>
+			
+		</li>
+		<li test-id='17' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">user_is_in_Vendor_Statement_page</span>
+				<div class='pre'>Navigated to Vendor Statement page</div>
+			
+		</li>
+		<li test-id='18' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">select_the_vendors_and_print_statement_using_excel_data_at</span>
+				<div class='pre'>Statements in queue field value is displaying correctly</div>
+				<div class='pre'>Vendor statement print successfull for vendor: Safeway</div>
+				<div class='pre'>Statements in queue field value is displaying correctly</div>
+				<div class='pre'>Vendor statement print successfull for vendors: Safeway, Tax Agency CA</div>
+				<div class='pre'>Statements in queue field value is displaying correctly</div>
+				<div class='pre'>Vendor statement print successfull for vendors: Tax Agency MA, Tax Agency MN</div>
+				<div class='pre'>Statements in queue field value is displaying correctly</div>
+				<div class='pre'>Vendor statement print successfull for vendor: Tax Agency MN</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Automation Testing on Vendor Statement Suite App</span>
+						<span class='test-time'>Nov 9, 2020 08:00:47 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='20' status='fail'>
+	<span class='duration right label'>0h 3m 43s+983ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verification of Email functionality</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='21' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">login</span>
+				<div class='pre'>Login Successful in Netsuite</div>
+			
+		</li>
+		<li test-id='22' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">user_is_in_Vendor_Statement_page</span>
+				<div class='pre'>Navigated to Vendor Statement page</div>
+			
+		</li>
+		<li test-id='23' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verification_of_No_Email_template_error</span>
+				<div class='pre'>Alert occured: Please select one email template</div>
+			
+		</li>
+		<li test-id='24' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verification_of_No_Email_Receipients_error</span>
+				<div class='pre'>Alert occured: Please enter Email for the selected Vendor</div>
+			
+		</li>
+		<li test-id='25' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verification_of_Email_to_field_with_invalid_emailId</span>
+				<div class='pre'>Alert occured: 
+Email cannot be sent to the Vendor: Safeway.
+Code: SSS_MISSING_REQD_ARGUMENT
+Details: author</div>
+			
+		</li>
+		<li test-id='26' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">verification_of_Email_to_field_with_invalid_emailId</span>
+				<div class='pre'>Alert occured: 
+Email cannot be sent to the Vendor: Safeway.
+Code: SSS_MISSING_REQD_ARGUMENT
+Details: author</div>
+				<div class='pre'>Alert occured: 
+Email cannot be sent to the Vendor: Safeway.
+Code: SSS_MISSING_REQD_ARGUMENT
+Details: author</div>
+				<div class='pre'>Alert occured: 
+Email cannot be sent to the Vendor: Tax Agency MA.
+Code: SSS_MISSING_REQD_ARGUMENT
+Details: author</div>
+				<div class='pre'>Alert occured: 
+Email cannot be sent to the Vendor: Tax Agency MN.
+Code: SSS_MISSING_REQD_ARGUMENT
+Details: author</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>18</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Nov 9, 2020 07:53:34 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Nov 9, 2020 08:04:31 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 10m 56s+964ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 2,
+				failParent: 2,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 2,
+				
+				passChild: 2,
+				failChild: 2,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 2,
+				
+				passGrandChild: 15,
+				failGrandChild: 3,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 3,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>
